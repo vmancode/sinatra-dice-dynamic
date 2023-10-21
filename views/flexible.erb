@@ -1,0 +1,21 @@
+<!-- /views/flexible.erb -->
+
+
+
+
+
+<h1><%= @num_dice %>d<%= @num_side %></h1>
+
+
+<ul>
+  <% @rolls.each do |a_roll| %>
+    <li>
+      <%= a_roll %>
+    </li>
+  <% end %>
+</ul>
+
+<%= params %>
+
+
+<!--- <h1><a href="/dynamic/:dicenum/:sidenum">Refresh</h1> --->
